@@ -22,7 +22,7 @@ const DevSchema = new Schema({
     dislikes: [{
         type: Schema.Types.ObjectId,
         ref: 'Dev',
-    }]
+    }],
 }, {
     //timestamps gera uma coluna chamada createdAt e outra coluna updatedAt
     //createdAt: vai armazenar de forma automatica a data de criação de um registro dentro do banco de dados 

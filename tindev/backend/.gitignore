@@ -3,5 +3,5 @@
 node_modules/
 
 #Yarn
-yarn.lock
+./backend/yarn.lock
 
