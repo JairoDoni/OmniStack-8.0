@@ -3,17 +3,17 @@ const { Schema, model } = require('mongoose')
 const DevSchema = new Schema({
     name:{
         type:String,
-        required: true
+        required: true,
     },
     user:{
         type:String,
-        required: true
+        required: true,
     },
     //quando não é obrigatorio pode-se passar diretamente o tipo do caracter
     bio: String,
     avatar: {
         type: String,
-        required: true
+        required: true,
     },
     likes: [{
         type: Schema.Types.ObjectId,

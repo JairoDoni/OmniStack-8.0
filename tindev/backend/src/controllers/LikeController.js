@@ -2,8 +2,6 @@ const Dev = require('../models/Dev')
 
 module.exports = {
     async store(req, res){
-        // console.log(req.params.devId)
-        // console.log(req.headers.user)
         const { user } = req.headers
         const { devId } = req.params
 
@@ -15,7 +13,7 @@ module.exports = {
         }
 
         if (targetDev.likes.includes(loggedDev._Id)) {
-            console.log('Deu Match')
+            console.log('DEU MATCH')
         }
 
         loggedDev.likes.push(targetDev._id) 

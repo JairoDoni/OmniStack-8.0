@@ -10,8 +10,8 @@ module.exports = {
         const users = await Dev.find({
             $and:[
                 { _id: { $ne: user } },
-                { _id: { $nin: loggedDev.likes}},
-                { _id: { $nin: loggedDev.dislikes}},
+                { _id: { $nin: loggedDev.likes } },
+                { _id: { $nin: loggedDev.dislikes } },
             ],
         })
         return res.json(users)
@@ -39,4 +39,4 @@ module.exports = {
 
         return res.json(dev)
     }
-}
+} 
